@@ -1,0 +1,459 @@
+Minh thu pham
+ahihi ds;sahf kh f;lakhd; askdh; lsa;ld h;sldh lashf lksh f
+safk ;sadfsh ;sdhf sahj f;shf sfashf ;sld fsfs
+fslkf ;sahf ashf ;ashf;l skadhl fksdf;ks;dlf has
+fsdlk ;sdlfh ;saldh f;lsdhf ;skhf ;as flfs
+slflkhs ;dlh 1Lecturer: NGUYEN Thi Thu Trang,trangntt@soict.hust.edu.vnTeaching Assistant: DO Minh Hieu,hieudominh@hotmail.comLab 05: Memory Management and Class Organization* Objectives:In this lab, you will practice with:·Creating packages to manage classes in Eclipse·Using some common packages/classes of Java API, e.g. Wrapper classes, Math, System·Practicing memory management with String and StringBuffer and other casesYou need to use the project that you did with the previous labs including both AimsProject and otherprojects.1. Import/export a project- Open Eclipse-  You  can  import/export  a  project  from/to  an  archive  file.  For  example,  if  you  want  toimport from a zip file, you can follow the following steps:+ Open File -> Import.+ Type zip to find Archive File if you have exported as a zip file before. You may chooseExisting Projects into Workspace if you want to open an existing project in your computer.Ignore this step if the AimsProject is already opened in the workspace.- Click Next and Browse to a zip file or a project to open
+             22. Re-organize your projects- Rename project, use packages and re-organize all hands-on labs and exercises from theLab01 up to now.+ For renaming or moving an item (i.e. a project, a class, a variable...), right click to theitem, choose Refactor -> Rename/Move and follow the steps.Figure 1-Refactoring+ For creating a package, right click to the project (or go to menu File) and choose New ->Package. Type the full path of package including parent packages, separated by a dot.- Yourstructure of your labsshould be at least as below. You can create sub-packagesfor more efficently organizing your classes in both projects and all listing packages. Allhands-on  labs  and  excercises  of  lab01  and  lab02  should  be  put  in  the  correspondingpackage in the OtherProjects project.For Global ICT+ AimsProjecthust.soict.globalict.aims.disc.DigitalVideoDischust.soict.globalict.aims.order.Orderhust.soict.globalict.aims.Aimshust.soict.globalict.aims.utils.DateUtilshust.soict.globalict.aims.utils.MyDatehust.soict.globalict.test.utils.DateTesthust.soict.globalict.test.disc.TestPassingParameter+ OtherProjectshust.soict.globalict.lab01hust.soict.globalict.lab02For HEDSPI+ AimsProjecthust.soict.hedspi.aims.disc.DigitalVideoDischust.soict.hedspi.aims.order.Orderhust.soict.hedspi.aims.Aimshust.soict.hedspi.aims.utils.DateUtilshust.soict.hedspi.aims.utils.MyDatehust.soict.hedspi.test.utils.DateTesthust.soict.hedspi.test.disc.TestPassingParameter+ OtherProjectshust.soict.hedspi.lab01hust.soict.hedspi.lab02
+             3Figure 2-Recommended Structure for Global ICTFigure 3-Recommended Structure for HEDSPI3. Search a dvd inAimsProjectproject:- In theDigitalVideoDiscclass, write aboolean search(String title)methodwhich  finds  out  (case  insensitive)  if  the  corresponding  disk  of  the  current  object  contains  thetitle. Remember that if thetitlehas multiple tokens (e.g. “Harry Potter”), the method stillreturnstrueif the disc has atitleincluding all the tokens (e.g. both two tokens “Harry” and“Potter”) regardless their order and their distance (sotruefor all title including a token “Harry”and a token “Potter” in any position in thetitle)-  In  theOrderclass,  write  a  methodDigitalVideoDisc getALuckyItem()whichrandomly pick out (remember to useMath.random()) an item for free. Remember to updateand test the methods for listing of dvds and total cost of an order (specifying a lucky and freeitem).-    CreateDiskTestclass    to    test    these    methods    in    the    packagehust.soict.[globalict|hedspi].aims4.String,StringBuilderandStringBuffer:- In theOtherProjectsproject, create a new packagehust.soict.globalict.garbagefor ICT orhust.soict.hedspi.garbagefor HEDSPI. We work with this package in this exercise.-  Create  a  new  classConcatenationInLoopsto  test  the  processing  time  to  constructStringusing+operator,StringBufferandStringBuilder.  The  following  piece  ofcode is a suggestion:
+             4More information onStringconcatenation, please referhttps://redfin.engineering/java-string-concatenation-which-way-is-best-8f590a7d22a8.-  Create  a  new  classGarbageCreator.Create  “garbage”  as  much  as  possible  and  observewhen  you  run  a  program  (it  should  let  the  program  stop  working  when  too  much  “garbage”).Write another classNoGarbageto solve the problem.Some suggestions:- Read a text/binary file to aStringwithout usingStringBufferto concatenate String (onlyuse+operator). Observe and capture your screen when you choose a very long file- Improve the code usingStringBuffer5. Assignment SubmissionYou  must  put  all  your  work,  written  by  yourself,  to  a  directory  Lab05,  and  push  it  to  yourmaster branch of the valid repository before the deadline announced in the class.Each student is expected to turn in his or her own work and not give or receive unpermitted aid.Otherwise, we would apply extreme methods for measurement to prevent cheating.
+             4
+             of 4Yahoo Search Results Yahoo Web Search
+                 Yahoo Search Results Yahoo
+                 Search query
+
+                 All Images Videos
+                 AnytimeThe Web
+                 macos - Reading file in java on Mac - Stack Overflow
+                 stackoverflow.com/questions/31226196/reading-file-in-java...
+                 I am doing a tutorial on java and the video I am at now deals with FileReading, but it is for windows and I am on a mac. Please help. import java.io.File; import java.io.FileNotFoundException; import java.util.Scanner; public class App { public static void main (String [] args) throws FileNotFoundException { String fileName = ...
+                 How do I provide a file path in Mac OS X while creating a file in Java?
+                 Java: Open a file (Windows + Mac) - Stack Overflow
+                 macos - Importing a .dat File Java - Stack Overflow
+                 macos - How to read OSX .plist files from Java? - Stack Overflow
+                 See more results
+                 Reading and Writing files (Java, Mac OSX) - Apple Community
+                 discussions.apple.com/thread/2046996
+                 If you're creating a production program then you can probably use a file chooser to allow the user to select the file. If you want to read/write a file to the desktop then this works: String desktop = System.getProperty ("user.home") + "/Desktop/"; File myFile = new File (desktop + "MyFile.txt");
+                 Java for Mac
+                 www.java.com/en/download/apple.jsp
+                 Mac OS X Version 10.6 and below. Use Software Update available on the Apple menu to check that you have the most up-to-date version of Java 6 for your Mac. Java 7 and later versions are not supported by these older versions of Mac OS X. If you have problems with Java 6, contact Apple Technical Support.
+                 How To Work With Files In Java - Marco Behler
+                 www.marcobehler.com/guides/java-files
+                 9/12/2020 · Reading files is very similar to writing: String s = Files.readString (utfFile); System.out.println ("s = " + s); s = Files.readString (utfFile, StandardCharsets.ISO_8859_1); System.out.println ("s = " + s); On Java11+, you should be using the Files.readString method to read a string from a file.
+                 How to Manage Multiple Java Versions in MacOS | by Chamika Kasun...
+                 medium.com/@chamikakasun/how-to-manage-multiple-java...
+                 Installing Java Version Manager - jEnv. As I mentioned above this tool lets you switch between multiple Java JDK versions without a pain. As the jEnv advertise “jEnv is a command-line tool to ...
+                 How to Install Java on MacOS in 2021 [Updated]
+                 explainjava.com/install-java-macos
+                 To install Java on MacOS you need to go to the official Oracle download page and click on the major version of Java. Press “JDK Download” link and scroll down and download macOS Installer. When downloading is finished launch dmg file and double-click on the icon.
+                 Java File: Reading and Writing Files in Java - Cave of...
+                 caveofprogramming.com/java/java-file-reading-and-writing...
+                 Reading Ordinary Text Files in Java If you want to read an ordinary text file in your system's default encoding (usually the case most of the time for most people), use FileReader and wrap it in a BufferedReader. In the following program, we read a file called "temp.txt" and output the file line by line on the console.
+                 How to Set Java Home on Mac OS in 2021 [Updated]
+                 explainjava.com/set-java-home-mac-os
+                 How to set Java Home environment variable on Mac OS X By Dmytro Shvechikov 10/28/2020 Java Tutorials 0 Comments Here I’ll explain how to add JAVA_HOME variable on your MacBook (Mac OS).
+                 12345Next17,100,000 results
+                 SettingsHelpPrivacy(Updated)Terms(Updated
+Communities
+Get Support
+Sign in
+Browse Search
+Support Communities / Developer Forums
+Looks like no one’s replied in a while. To start the conversation again, simply ask a new question.
+User profile for user: JStock23 JStock23
+JStock23
+User level: Level 1
+(6 points)
+Question:Q:
+Reading and Writing files (Java, Mac OSX)
+
+Hello, I am "kind of" experienced with Java (read a few books, and took one course in highschool, and I fool around with it from time to time).
+
+
+
+All of this however was on Windows XP, and all from the command line. Because I now have a Macbook Pro, I wish to start programming java on Mac OSX naturally. I've gotten over the shock and awe of using Xcode (I had never use a "package" before with multiple components), but I have come across a problem. I referenced one of my Java books on how to read from a .txt file (my intended program needs a database), but I've been trying for a few hours now, and I just can't seem to get it to work at all.
+
+
+
+I want to read the entire file and save it as a String. I don't know if there is a different procedure on OSX than Windows, but here is what I am using:
+
+
+
+(using the "premade model" with Xcode)
+
+
+
+
+
+
+public String readPlease() {
+ String str = "";
+ try {
+ FileReader file = new FileReader("database.txt");
+ BufferedReader buff = new BufferedReader(file);
+ str = buff.readLine();
+ buff.close();
+ return str;
+ } catch (IOException e) {
+ return e.toString();
+ }
+}
+
+
+
+
+
+
+And it is returning:
+
+
+
+java.io.FileNotFoundException: database.txt (No such file or directory)
+
+
+
+The .java file and the .txt file are in the same folder (src) and I've tried it while its in "resources" and "bin" (where the .class files are).
+
+
+
+Thank a lot 🙂
+MacBook Pro, Mac OS X (10.5.7)
+
+Posted on Jun 18, 2009 10:58 PM
+
+Reply  I have this question too (41)
+Question marked as Solved
+User profile for user: Bob Lang1 Bob Lang1
+Bob Lang1
+User level: Level 5
+(4,080 points)
+Answer:A:
+Hi
+
+
+
+When you open a file in Java and don't specify a folder then it defaults to the same folder as your Jar file. The safest way around this is to always specify the complete file spec like this:
+
+/Users/myUser/etc/etc/etc
+
+
+
+If you're creating a production program then you can probably use a file chooser to allow the user to select the file.
+
+
+
+If you want to read/write a file to the desktop then this works:
+
+
+
+ String desktop = System.getProperty ("user.home") + "/Desktop/";
+
+ File myFile = new File (desktop + "MyFile.txt");
+
+
+
+A similar technique also works with /Documents/ too.
+
+
+
+Good luck
+
+
+
+Bob
+Posted on Jun 20, 2009 2:37 PM
+
+View answer in context
+All replies   Drop Down menu
+Page 1 of 1
+Page content loaded
+User profile for user: JStock23 JStock23
+JStock23
+User level: Level 1
+(6 points)
+Jun 18, 2009 11:43 PM in response to JStock23
+
+Did some fooling around and found out it needed to be in the "dist" folder
+Reply Helpful  Thread reply - more options
+Question marked as Solved
+User profile for user: Bob Lang1 Bob Lang1
+Bob Lang1
+User level: Level 5
+(4,080 points)
+Jun 20, 2009 2:37 PM in response to JStock23
+
+Hi
+
+
+
+When you open a file in Java and don't specify a folder then it defaults to the same folder as your Jar file. The safest way around this is to always specify the complete file spec like this:
+
+/Users/myUser/etc/etc/etc
+
+
+
+If you're creating a production program then you can probably use a file chooser to allow the user to select the file.
+
+
+
+If you want to read/write a file to the desktop then this works:
+
+
+
+ String desktop = System.getProperty ("user.home") + "/Desktop/";
+
+ File myFile = new File (desktop + "MyFile.txt");
+
+
+
+A similar technique also works with /Documents/ too.
+
+
+
+Good luck
+
+
+
+Bob
+Reply Helpful  Thread reply - more options
+User profile for user: etresoft etresoft
+etresoft
+User level: Level 8
+(38,815 points)
+macOSSpeciality level out of ten: 0
+Jun 20, 2009 7:12 PM in response to JStock23
+
+Don't forget that the Mac has a command line too - and a much better one than in Windows.
+Reply Helpful  Thread reply - more optionsMinh thu pham
+                                          ahihi ds;sahf kh f;lakhd; askdh; lsa;ld h;sldh lashf lksh f
+                                          safk ;sadfsh ;sdhf sahj f;shf sfashf ;sld fsfs
+                                          fslkf ;sahf ashf ;ashf;l skadhl fksdf;ks;dlf has
+                                          fsdlk ;sdlfh ;saldh f;lsdhf ;skhf ;as flfs
+                                          slflkhs ;dlh 1Lecturer: NGUYEN Thi Thu Trang,trangntt@soict.hust.edu.vnTeaching Assistant: DO Minh Hieu,hieudominh@hotmail.comLab 05: Memory Management and Class Organization* Objectives:In this lab, you will practice with:·Creating packages to manage classes in Eclipse·Using some common packages/classes of Java API, e.g. Wrapper classes, Math, System·Practicing memory management with String and StringBuffer and other casesYou need to use the project that you did with the previous labs including both AimsProject and otherprojects.1. Import/export a project- Open Eclipse-  You  can  import/export  a  project  from/to  an  archive  file.  For  example,  if  you  want  toimport from a zip file, you can follow the following steps:+ Open File -> Import.+ Type zip to find Archive File if you have exported as a zip file before. You may chooseExisting Projects into Workspace if you want to open an existing project in your computer.Ignore this step if the AimsProject is already opened in the workspace.- Click Next and Browse to a zip file or a project to open
+                                                       22. Re-organize your projects- Rename project, use packages and re-organize all hands-on labs and exercises from theLab01 up to now.+ For renaming or moving an item (i.e. a project, a class, a variable...), right click to theitem, choose Refactor -> Rename/Move and follow the steps.Figure 1-Refactoring+ For creating a package, right click to the project (or go to menu File) and choose New ->Package. Type the full path of package including parent packages, separated by a dot.- Yourstructure of your labsshould be at least as below. You can create sub-packagesfor more efficently organizing your classes in both projects and all listing packages. Allhands-on  labs  and  excercises  of  lab01  and  lab02  should  be  put  in  the  correspondingpackage in the OtherProjects project.For Global ICT+ AimsProjecthust.soict.globalict.aims.disc.DigitalVideoDischust.soict.globalict.aims.order.Orderhust.soict.globalict.aims.Aimshust.soict.globalict.aims.utils.DateUtilshust.soict.globalict.aims.utils.MyDatehust.soict.globalict.test.utils.DateTesthust.soict.globalict.test.disc.TestPassingParameter+ OtherProjectshust.soict.globalict.lab01hust.soict.globalict.lab02For HEDSPI+ AimsProjecthust.soict.hedspi.aims.disc.DigitalVideoDischust.soict.hedspi.aims.order.Orderhust.soict.hedspi.aims.Aimshust.soict.hedspi.aims.utils.DateUtilshust.soict.hedspi.aims.utils.MyDatehust.soict.hedspi.test.utils.DateTesthust.soict.hedspi.test.disc.TestPassingParameter+ OtherProjectshust.soict.hedspi.lab01hust.soict.hedspi.lab02
+                                                       3Figure 2-Recommended Structure for Global ICTFigure 3-Recommended Structure for HEDSPI3. Search a dvd inAimsProjectproject:- In theDigitalVideoDiscclass, write aboolean search(String title)methodwhich  finds  out  (case  insensitive)  if  the  corresponding  disk  of  the  current  object  contains  thetitle. Remember that if thetitlehas multiple tokens (e.g. “Harry Potter”), the method stillreturnstrueif the disc has atitleincluding all the tokens (e.g. both two tokens “Harry” and“Potter”) regardless their order and their distance (sotruefor all title including a token “Harry”and a token “Potter” in any position in thetitle)-  In  theOrderclass,  write  a  methodDigitalVideoDisc getALuckyItem()whichrandomly pick out (remember to useMath.random()) an item for free. Remember to updateand test the methods for listing of dvds and total cost of an order (specifying a lucky and freeitem).-    CreateDiskTestclass    to    test    these    methods    in    the    packagehust.soict.[globalict|hedspi].aims4.String,StringBuilderandStringBuffer:- In theOtherProjectsproject, create a new packagehust.soict.globalict.garbagefor ICT orhust.soict.hedspi.garbagefor HEDSPI. We work with this package in this exercise.-  Create  a  new  classConcatenationInLoopsto  test  the  processing  time  to  constructStringusing+operator,StringBufferandStringBuilder.  The  following  piece  ofcode is a suggestion:
+                                                       4More information onStringconcatenation, please referhttps://redfin.engineering/java-string-concatenation-which-way-is-best-8f590a7d22a8.-  Create  a  new  classGarbageCreator.Create  “garbage”  as  much  as  possible  and  observewhen  you  run  a  program  (it  should  let  the  program  stop  working  when  too  much  “garbage”).Write another classNoGarbageto solve the problem.Some suggestions:- Read a text/binary file to aStringwithout usingStringBufferto concatenate String (onlyuse+operator). Observe and capture your screen when you choose a very long file- Improve the code usingStringBuffer5. Assignment SubmissionYou  must  put  all  your  work,  written  by  yourself,  to  a  directory  Lab05,  and  push  it  to  yourmaster branch of the valid repository before the deadline announced in the class.Each student is expected to turn in his or her own work and not give or receive unpermitted aid.Otherwise, we would apply extreme methods for measurement to prevent cheating.
+                                                       4
+                                                       of 4Yahoo Search Results Yahoo Web Search
+                                                           Yahoo Search Results Yahoo
+                                                           Search query
+
+                                                           All Images Videos
+                                                           AnytimeThe Web
+                                                           macos - Reading file in java on Mac - Stack Overflow
+                                                           stackoverflow.com/questions/31226196/reading-file-in-java...
+                                                           I am doing a tutorial on java and the video I am at now deals with FileReading, but it is for windows and I am on a mac. Please help. import java.io.File; import java.io.FileNotFoundException; import java.util.Scanner; public class App { public static void main (String [] args) throws FileNotFoundException { String fileName = ...
+                                                           How do I provide a file path in Mac OS X while creating a file in Java?
+                                                           Java: Open a file (Windows + Mac) - Stack Overflow
+                                                           macos - Importing a .dat File Java - Stack Overflow
+                                                           macos - How to read OSX .plist files from Java? - Stack Overflow
+                                                           See more results
+                                                           Reading and Writing files (Java, Mac OSX) - Apple Community
+                                                           discussions.apple.com/thread/2046996
+                                                           If you're creating a production program then you can probably use a file chooser to allow the user to select the file. If you want to read/write a file to the desktop then this works: String desktop = System.getProperty ("user.home") + "/Desktop/"; File myFile = new File (desktop + "MyFile.txt");
+                                                           Java for Mac
+                                                           www.java.com/en/download/apple.jsp
+                                                           Mac OS X Version 10.6 and below. Use Software Update available on the Apple menu to check that you have the most up-to-date version of Java 6 for your Mac. Java 7 and later versions are not supported by these older versions of Mac OS X. If you have problems with Java 6, contact Apple Technical Support.
+                                                           How To Work With Files In Java - Marco Behler
+                                                           www.marcobehler.com/guides/java-files
+                                                           9/12/2020 · Reading files is very similar to writing: String s = Files.readString (utfFile); System.out.println ("s = " + s); s = Files.readString (utfFile, StandardCharsets.ISO_8859_1); System.out.println ("s = " + s); On Java11+, you should be using the Files.readString method to read a string from a file.
+                                                           How to Manage Multiple Java Versions in MacOS | by Chamika Kasun...
+                                                           medium.com/@chamikakasun/how-to-manage-multiple-java...
+                                                           Installing Java Version Manager - jEnv. As I mentioned above this tool lets you switch between multiple Java JDK versions without a pain. As the jEnv advertise “jEnv is a command-line tool to ...
+                                                           How to Install Java on MacOS in 2021 [Updated]
+                                                           explainjava.com/install-java-macos
+                                                           To install Java on MacOS you need to go to the official Oracle download page and click on the major version of Java. Press “JDK Download” link and scroll down and download macOS Installer. When downloading is finished launch dmg file and double-click on the icon.
+                                                           Java File: Reading and Writing Files in Java - Cave of...
+                                                           caveofprogramming.com/java/java-file-reading-and-writing...
+                                                           Reading Ordinary Text Files in Java If you want to read an ordinary text file in your system's default encoding (usually the case most of the time for most people), use FileReader and wrap it in a BufferedReader. In the following program, we read a file called "temp.txt" and output the file line by line on the console.
+                                                           How to Set Java Home on Mac OS in 2021 [Updated]
+                                                           explainjava.com/set-java-home-mac-os
+                                                           How to set Java Home environment variable on Mac OS X By Dmytro Shvechikov 10/28/2020 Java Tutorials 0 Comments Here I’ll explain how to add JAVA_HOME variable on your MacBook (Mac OS).
+                                                           12345Next17,100,000 results
+                                                           SettingsHelpPrivacy(Updated)Terms(Updated
+                                          Communities
+                                          Get Support
+                                          Sign in
+                                          Browse Search
+                                          Support Communities / Developer Forums
+                                          Looks like no one’s replied in a while. To start the conversation again, simply ask a new question.
+                                          User profile for user: JStock23 JStock23
+                                          JStock23
+                                          User level: Level 1
+                                          (6 points)
+                                          Question:Q:
+                                          Reading and Writing files (Java, Mac OSX)
+
+                                          Hello, I am "kind of" experienced with Java (read a few books, and took one course in highschool, and I fool around with it from time to time).
+
+
+
+                                          All of this however was on Windows XP, and all from the command line. Because I now have a Macbook Pro, I wish to start programming java on Mac OSX naturally. I've gotten over the shock and awe of using Xcode (I had never use a "package" before with multiple components), but I have come across a problem. I referenced one of my Java books on how to read from a .txt file (my intended program needs a database), but I've been trying for a few hours now, and I just can't seem to get it to work at all.
+
+
+
+                                          I want to read the entire file and save it as a String. I don't know if there is a different procedure on OSX than Windows, but here is what I am using:
+
+
+
+                                          (using the "premade model" with Xcode)
+
+
+
+
+
+
+                                          public String readPlease() {
+                                           String str = "";
+                                           try {
+                                           FileReader file = new FileReader("database.txt");
+                                           BufferedReader buff = new BufferedReader(file);
+                                           str = buff.readLine();
+                                           buff.close();
+                                           return str;
+                                           } catch (IOException e) {
+                                           return e.toString();
+                                           }
+                                          }
+
+
+
+
+
+
+                                          And it is returning:
+
+
+
+                                          java.io.FileNotFoundException: database.txt (No such file or directory)
+
+
+
+                                          The .java file and the .txt file are in the same folder (src) and I've tried it while its in "resources" and "bin" (where the .class files are).
+
+
+
+                                          Thank a lot 🙂
+                                          MacBook Pro, Mac OS X (10.5.7)
+
+                                          Posted on Jun 18, 2009 10:58 PM
+
+                                          Reply  I have this question too (41)
+                                          Question marked as Solved
+                                          User profile for user: Bob Lang1 Bob Lang1
+                                          Bob Lang1
+                                          User level: Level 5
+                                          (4,080 points)
+                                          Answer:A:
+                                          Hi
+
+
+
+                                          When you open a file in Java and don't specify a folder then it defaults to the same folder as your Jar file. The safest way around this is to always specify the complete file spec like this:
+
+                                          /Users/myUser/etc/etc/etc
+
+
+
+                                          If you're creating a production program then you can probably use a file chooser to allow the user to select the file.
+
+
+
+                                          If you want to read/write a file to the desktop then this works:
+
+
+
+                                           String desktop = System.getProperty ("user.home") + "/Desktop/";
+
+                                           File myFile = new File (desktop + "MyFile.txt");
+
+
+
+                                          A similar technique also works with /Documents/ too.
+
+
+
+                                          Good luck
+
+
+
+                                          Bob
+                                          Posted on Jun 20, 2009 2:37 PM
+
+                                          View answer in context
+                                          All replies   Drop Down menu
+                                          Page 1 of 1
+                                          Page content loaded
+                                          User profile for user: JStock23 JStock23
+                                          JStock23
+                                          User level: Level 1
+                                          (6 points)
+                                          Jun 18, 2009 11:43 PM in response to JStock23
+
+                                          Did some fooling around and found out it needed to be in the "dist" folder
+                                          Reply Helpful  Thread reply - more options
+                                          Question marked as Solved
+                                          User profile for user: Bob Lang1 Bob Lang1
+                                          Bob Lang1
+                                          User level: Level 5
+                                          (4,080 points)
+                                          Jun 20, 2009 2:37 PM in response to JStock23
+
+                                          Hi
+
+
+
+                                          When you open a file in Java and don't specify a folder then it defaults to the same folder as your Jar file. The safest way around this is to always specify the complete file spec like this:
+
+                                          /Users/myUser/etc/etc/etc
+
+
+
+                                          If you're creating a production program then you can probably use a file chooser to allow the user to select the file.
+
+
+
+                                          If you want to read/write a file to the desktop then this works:
+
+
+
+                                           String desktop = System.getProperty ("user.home") + "/Desktop/";
+
+                                           File myFile = new File (desktop + "MyFile.txt");
+
+
+
+                                          A similar technique also works with /Documents/ too.
+
+
+
+                                          Good luck
+
+
+
+                                          Bob
+                                          Reply Helpful  Thread reply - more options
+                                          User profile for user: etresoft etresoft
+                                          etresoft
+                                          User level: Level 8
+                                          (38,815 points)
+                                          macOSSpeciality level out of ten: 0
+                                          Jun 20, 2009 7:12 PM in response to JStock23
+
+                                          Don't forget that the Mac has a command line too - and a much better one than in Windows.
+                                          Reply Helpful  Thread reply - more options
+                                          Page 1 of 1
+
+                                          User profile for user: JStock23 JStock23
+                                          Question:Q: Reading and Writing files (Java, Mac OSX)
+                                          Apple Footer
+                                          This site contains user submitted content, comments and opinions and is for informational purposes only. Apple may provide or recommend responses as a possible solution based on the information provided; every potential issue may involve several factors not detailed in the conversations captured in an electronic forum and Apple can therefore provide no guarantee as to the efficacy of any proposed solutions on the community forums. Apple disclaims any and all liability for the acts, omissions and conduct of any third parties in connection with or related to your use of the site. All postings and use of the content on this site are subject to the Apple Support Communities Terms of Use. See how your data is managed...
+                                          
+                                          Apple
+                                           Support  Communities
+                                          More ways to shop: Visit an Apple Store, call 1-800-MY-APPLE, or find a reseller.
+                                          United States
+                                          Copyright © 2021 Apple Inc. All rights reserved.Privacy Policy Terms of Use Sales and Refunds Legal Site Map)Powered by Bing™
+Page 1 of 1
+
+User profile for user: JStock23 JStock23
+Question:Q: Reading and Writing files (Java, Mac OSX)
+Apple Footer
+This site contains user submitted content, comments and opinions and is for informational purposes only. Apple may provide or recommend responses as a possible solution based on the information provided; every potential issue may involve several factors not detailed in the conversations captured in an electronic forum and Apple can therefore provide no guarantee as to the efficacy of any proposed solutions on the community forums. Apple disclaims any and all liability for the acts, omissions and conduct of any third parties in connection with or related to your use of the site. All postings and use of the content on this site are subject to the Apple Support Communities Terms of Use. See how your data is managed...
+
+Apple
+ Support  Communities
+More ways to shop: Visit an Apple Store, call 1-800-MY-APPLE, or find a reseller.
+United States
+Copyright © 2021 Apple Inc. All rights reserved.Privacy Policy Terms of Use Sales and Refunds Legal Site Map)Powered by Bing™
