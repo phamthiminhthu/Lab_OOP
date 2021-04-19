@@ -52,20 +52,16 @@ public class Book extends Media {
         for (int i = 0; i < a.length; i++) {
             this.contentTokens.add(a[i]);
         }
-        ArrayList<Integer> b = new ArrayList<>();
-        ArrayList<String> c = new ArrayList<>();
-        int count = 0;
-        for (int i = 0; i < this.contentTokens.size() - 1; i++) {
-            ++count;
-            if (this.contentTokens.get(i) != this.contentTokens.get(i + 1)) {
-                c.add(this.contentTokens.get(i));
-                b.add(count + 1);
-                count = 0;
+        Iterator<String> iterator = this.contentTokens.iterator();
+        while(iterator.hasNext()){
+            String key = iterator.next();
+            if(this.wordFrequency.containsKey(key)){
+                this.wordFrequency.put(key, this.wordFrequency.get(key) + 1);
+            }else{
+                this.wordFrequency.put(key, 1);
             }
         }
-        for(int i = 0; i < c.size(); i++){
-                this.wordFrequency.put(c.get(i),b.get(i));
-        }
+
 
     }
 
